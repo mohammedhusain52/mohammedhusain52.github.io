@@ -1,0 +1,15 @@
+<svg width="50" height="50" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cloud icon -->
+  <path d="M28 24C30.76 24 33 26.24 33 29C33 31.76 30.76 34 28 34H14C11.24 34 9 31.76 9 29C9 26.24 11.24 24 14 24C14.76 24 15.47 24.13 16.11 24.38C16.56 21.55 18.95 19.5 21.88 19.5C24.53 19.5 26.74 21.26 27.39 23.75C27.92 23.55 28.46 23.5 29 23.5C30.38 23.5 31.5 24.62 31.5 26C31.5 27.38 30.38 28.5 29 28.5H14V26H28V24Z" fill="url(#cloud_gradient)" />
+
+  <!-- Upload/Download arrows -->
+  <polygon points="20,22 22,22 22,25 25,25 21,29 17,25 20,25" fill="url(#cloud_gradient)" />
+  <polygon points="20,30 22,30 22,27 25,27 21,23 17,27 20,27" fill="url(#cloud_gradient)" />
+
+  <defs>
+    <linearGradient id="cloud_gradient" x1="1" y1="4" x2="41" y2="41" gradientUnits="userSpaceOnUse">
+      <stop offset="0.2" stop-color="#F5A623" />
+      <stop offset="1" stop-color="#D0021B" />
+    </linearGradient>
+  </defs>
+</svg>

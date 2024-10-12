@@ -1,0 +1,20 @@
+<svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Top cylinder outline -->
+  <ellipse cx="21" cy="10" rx="10" ry="5" stroke="url(#data_gradient)" stroke-width="2" fill="none"/>
+  <!-- Middle rectangle to represent body of the cylinder -->
+  <rect x="11" y="10" width="20" height="12" stroke="url(#data_gradient)" stroke-width="2" fill="none" />
+  <!-- Bottom cylinder outline -->
+  <ellipse cx="21" cy="22" rx="10" ry="5" stroke="url(#data_gradient)" stroke-width="2" fill="none"/>
+
+  <!-- Add a few lines to represent multiple stackable data rows -->
+  <line x1="11" y1="16" x2="31" y2="16" stroke="url(#data_gradient)" stroke-width="1.5" />
+  <line x1="11" y1="20" x2="31" y2="20" stroke="url(#data_gradient)" stroke-width="1.5" />
+
+  <!-- Gradient for the data icon -->
+  <defs>
+    <linearGradient id="data_gradient" x1="3" y1="1" x2="37" y2="41" gradientUnits="userSpaceOnUse">
+      <stop offset="0.2" stop-color="#FF6F61" />
+      <stop offset="1" stop-color="#F8E71C" />
+    </linearGradient>
+  </defs>
+</svg>

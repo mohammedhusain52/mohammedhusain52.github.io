@@ -1,627 +1,1105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Website Title -->
-    <title>Mohammed Husain</title>
-    <!-- Bootstrap -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Font-Awesome -->
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<!-- Lightbox -->
-	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
-    <!-- Text Rotator-->
-	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
-	<!-- FlexSlider -->
-    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
-	<!-- Theme Style -->
-    <link href="css/style.css" rel="stylesheet">
-	<!-- Animations -->
-    <link href="css/animate.css" rel="stylesheet">
-	<!-- Custom Favicon -->
-	<link href="img/logo.jpg" rel="shortcut icon" type="image/x-icon" /> 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="assets/html5shiv/html5shiv.js"></script>
-    <script src="assets/respond/respond.min.js"></script>
-    <![endif]-->
-  </head>
-    <body id="top">
 
-      <!-- ****************************** Preloader ************************** -->
-      <div id="preloader"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Husain Portfolio</title>
 
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon">
 
-	  	<!-- ==========================
-        HEADER SECTION 
-        =========================== -->
-        <header id="home">
-		    <!-- creative menu -->
-            <div class="container-fluid">
-              <div class="row">
-                <div class="menu-wrap">
-				<nav class="menu">
-				    <!-- Menu Links -->
-					<div class="icon-list">
-						<a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
-						<a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
-            <a href="index.html#blog"><i class="fa fa-briefcase fa-rss"></i><span>Experience</span></a>
-						<a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Skills</span></a>
-						<a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Projects</span></a>
-						<a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
-					</div>
-				</nav>
-			    </div>
-			    <button class="menu-button" id="open-button"></button><!-- menu button -->
-              </div><!--/row-->
-            </div><!--/container-->
-		  <!-- Header Image -->
-          <section class="hero" id="hero">
-            <div class="container">
-			  <!-- Slider Button (don't edit!)-->
-              <div class="row">
-                <div class="col-md-12 text-right navicon">
-                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
-                </div>
-              </div>
-			  <!-- HEADER HEADLINE -->
-              <div class="row">
-                <div class="col-md-8 col-md-offset-1 inner">
-                  <h1 class="animated fadeInDown">
-                    M<span style="color:#E04343;">o</span>hammed<br/>
-                    <span>Hu<span style="color:#FFE800">s</span>ain</span>
-                  </h1><!-- Title -->
-                  <h3 class="animated fadeInUp delay-05s"><span class="rotate"> Masters Student, Data Science Enthusiast,Python Developer,Android Developer, Web Developer</span></h3><!-- Text Rotator -->
-                </div>
-              </div>
-			  <!-- Learn More Button -->
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
-			            <p>SEE MORE</p>
-			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
-			        </a>
-                </div>
-              </div>
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my_pic.JPG" alt="Mohammed Husain" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Mohammed Husain">Mohammed Husain</h1>
+
+          <p class="title">Data Scientist | AI & ML Enthusiast</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
-          </section>
-		  <!-- Header Image End -->
-        </header>
-		<!-- ==========================
-        HEADER SECTION END  
-        =========================== -->
-		
-		
-		
-		
-		<!-- ==========================
-        ABOUT SECTION  
-        =========================== -->
-        <section class="intro text-center section-padding color-bg" id="about">
-          <div class="container">
-		    <!-- WELCOME TEXT -->
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 wp1">
-                <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
-				<!-- about / welcome text -->
-                <p>I am Master's Student in Data Science at Friedrich–Alexander University Erlangen, Germany. I have completed my Bachelors in Computer Science and Engineering from Shri Ramdeobaba College of Engineering and Management, Nagpur (Passout - 2021).
-                </br>My aim is to secure a position where I can efficiently contribute my
-                  skills and abilities to the growth of the organization and
-                  build my professional career.
-                </p>
-                <div class="counter-wrap ftco-animate d-flex mt-md-3">
-                  <div class="text">
-                    <p><a href="https://drive.google.com/file/d/1ltE2bD8zAZMxGpdD02GBL-W9S4vbWGAS/view?usp=sharing" class="btn btn-primary py-3 px-3" target="_blank" rel="noopener noreferrer">Download Resume</a></p>
-                  </div>
-                </div>
-                </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:mohammedhusain51@gmail.com" class="contact-link">mohammedhusain51
+                <br>@gmail.com</a>
             </div>
-          </div>
-        </section>
 
+          </li>
 
-    <!-- ==========================
-        BLOG SECTION 
-        =========================== -->
-        <section class="text-center section-padding" id="blog">
-          <div class="container">
-        <!-- Headline -->
-        <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">My <span>Experience</span></h1>
-              </div>
-            </div><br><br>
+          <li class="contact-item">
 
-      <!-- Blog Slider -->
-      <div class="row">
-        <div id="blogSlider">
-          <ul class="slides">
-            <li>
-      <!-- Entry 1 -->
-              <div class="col-md-4 wp4">
-                <div class="overlay-effect effects clearfix">
-                  <div class="img">
-                    <img src="img/blog1.png" class="grayscale" alt="Blog Item" width="300" height="200">
-                  </div>
-                </div>
-              <h2>Intern - Data Science</h2>
-              <h3>Delaplex Pvt Ltd.</h3>
-              <span class="date">December 2020 - June 2021</span>
-              <p>My responsibilities in this roles includes (but not limited to):</br>
-              -Involved in all phases of Project Development Cycle that includes Requirement analysis, Design, Implementation and Deployment.</br>
-              -Coordinate with Team and Client in every phase of Project deployment.</br>
-              -Worked on Python , SQL Server , SQLALCHEMY , Azure DevOps ,Azure SQL Database.</br>
-              -Worked on Video and Image Processing.</p>
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-    <!-- Entry 2 -->
-             <div class="col-md-4 wp4">
-              <div class="overlay-effect effects clearfix">
-                <div class="img">
-                  <img src="img/blog2.png" class="grayscale" alt="Blog Item" width="300" height="200">
-                </div>
-              </div>
-            
-            <h2>Analytics Intern</h2>
-            <h3>Happiest Minds Technologies Pvt Ltd.</h3>
-            <span class="date">July 2020 - December 2020</span>
-            <p>Worked on Image and Video Analytics.</p>
-						<p>Worked on Face Detection.Also worked on VoTT Tagging Tool.</p>
-		    		</div>
-    <!-- Entry 3 -->
-              <div class="col-md-4 wp4">
-                <div class="overlay-effect effects clearfix">
-                  <div class="img">
-                    <img src="img/blog3.png" class="grayscale" alt="Blog Item" width="300" height="200">
-                  </div>
-                </div>
-              
-              <h2>Summer Intern</h2>
-              <h3>Tetrahedron Manufacturing Services Pvt Ltd.</h3>
-              <span class="date">June 2020 - July 2020</span>
-              <p>Worked on Android Application and IOT Arduino Sensors.</p>
-							<p>Mobile Application development for Self Driving Industrial robot and real time data analysis.</p>
-							<p>Android Mobile Application development for Smart Lock System.</p>
-		    				</div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+4917674141153" class="contact-link">+49 17674141153</a>
+            </div>
+
+          </li>
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1999-06-19">June 19, 1999</time>
+            </div>
+
+          </li> -->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Berlin, Germany</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LINKEDIN</p>
+              <a href="https://www.linkedin.com/in/mohammed-husain-7655a317b/" target="_blank" class="contact-link">Mohammed Husain</a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://www.facebook.com/mohammed.husain.39/" class="social-link" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
             </li>
-            <li>
-      <!-- Entry 4 -->
-              <div class="col-md-4 wp4">
-                <div class="overlay-effect effects clearfix">
-                  <div class="img">
-                    <img src="img/blog1.png" class="grayscale" alt="Blog Item" width="300" height="200">
-                  </div>
-                </div>
-              <h2>Summer Intern</h2>
-              <h3>Delaplex Pvt Ltd.</h3>
-              <span class="date">May 2019 - June 2019</span>
-              <p>Worked on live projects on React Js and Python.</p>
-            </div>
-    <!-- Entry 5 -->
-            <div class="col-md-4 wp4">
-              <div class="overlay-effect effects clearfix">
-                <div class="img">
-                  <img src="img/blog4.png" class="grayscale" alt="Blog Item" width="300" height="200">
-                </div>
-              </div>
-            
-            <h2>Graphic Designer</h2>
-            <h3>Orangetales</h3>
-            <span class="date">September 2019 - December 2020</span>
-            <p>Designing different posters and advertisement materials for business and social needs.</p>
-		    				</div>
+
+            <li class="social-item">
+              <a href="https://github.com/mohammedhusain52" class="social-link" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://www.instagram.com/mohammedhusain52/" class="social-link" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
             </li>
           </ul>
-        </div>
       </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            🎓 I hold a Master’s degree in Data Science with a focus on AI and Machine Learning from Friedrich Alexander University, building on a Bachelor’s in Computer Science. My passion for solving complex problems using data-driven techniques has been the backbone of my academic journey. During my studies, I delved into Machine Learning, Deep Learning, and Big Data technologies, excelling in projects that required critical thinking, creativity, and the ability to apply advanced algorithms to real-world problems.
+          </p>
+          <p>
+            💼 I have had the privilege of working with leading organizations such as Delivery Hero, Amazon, and Awin AG, where I contributed to the development and deployment of innovative data solutions. These roles allowed me to lead projects like vendor and item-level matching models, automated reporting pipelines, and publisher recommendation systems that drove business growth and efficiency. My experience spans across e-commerce, tech, and marketing industries, equipping me with a versatile skill set in data science and engineering. I am proficient in a wide range of programming languages, cloud platforms, and data analysis tools, including Python, SQL, PySpark, AWS, and Microsoft Azure.
+          </p>
+          <p>
+            🚀 Looking ahead, I aim to continue advancing in the field of Data Science, with a particular interest in leveraging AI and Machine Learning to solve impactful business challenges. My future goals include expanding my expertise in Big Data technologies and AI-driven decision-making systems, while contributing to projects that focus on sustainable and innovative tech solutions.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm Doing</h3>
+        
+          <ul class="service-list">
+        
+            <li class="service-item">
+        
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-ml.svg" alt="machine learning icon" width="40">
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI / ML Solutions</h4>
+        
+                <p class="service-item-text">
+                  Design and develop advanced Machine Learning models, including gpt models, clustering, anomaly detection, and personalized recommendation systems.
+                </p>
+              </div>
+        
+            </li>
+        
+            <li class="service-item">
+        
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-data.svg" alt="data engineering icon" width="40">
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Engineering</h4>
+        
+                <p class="service-item-text">
+                  Build and maintain robust data pipelines for seamless integration, data processing, and insights generation using platforms like Google BigQuery, Redshift, and Azure Databricks.
+                </p>
+              </div>
+        
+            </li>
+        
+            <li class="service-item">
+        
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-analytics.svg" alt="analytics icon" width="40">
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analytics & Visualization</h4>
+        
+                <p class="service-item-text">
+                  Create interactive dashboards using Tableau, Looker, PowerBI and Amazon QuickSight to provide real-time insights for data-driven decision-making.
+                </p>
+              </div>
+        
+            </li>
+        
+            <li class="service-item">
+        
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-cloud.svg" alt="cloud computing icon" width="40">
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Computing & Big Data</h4>
+        
+                <p class="service-item-text">
+                  Leverage cloud platforms such as Microsoft Azure, Google Cloud, and AWS for scalable data storage, processing, and analytics.
+                </p>
+              </div>
+        
+            </li>
+        
+          </ul>
+        
+        </section>        
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+      
+        <!-- Education Section -->
+        <section class="timeline">
+          <div class="title-wrapper" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3" style="margin: 0;">Education</h3>
+        
+            <!-- Download Button in front of Education heading -->
+            <div style="margin-left: auto;">
+              <a href="CV-Mohammed.pdf" download class="download-button" target="_blank">
+                Download Resume
+              </a>
+            </div>
+          </div>
+      
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">MSc in Data Science (Majors in AI & ML)</h4>
+              <span>Friedrich Alexander University (FAU), Erlangen, Germany</span>
+              <span>2021 - 2023</span>
+              <p class="timeline-text">
+                GPA: 2.1
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">B.E. in Computer Science and Engineering</h4>
+              <span>Shri Ramdeobaba College of Engineering and Management (RCOEM), Nagpur, India</span>
+              <span>2017 - 2021</span>
+              <p class="timeline-text">
+                CGPA: 9.81
+              </p>
+            </li>
+          </ol>
+        </section>
+      
+        <!-- Experience Section -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+      
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Scientist Intern</h4>
+              <span>Delivery Hero, Berlin, Germany</span>
+              <span>June 2024 — Present</span>
+              <p class="timeline-text">
+                • Designed and developed an ML model for vendor-level and item-level matching.<br>
+                • Created an ML model to estimate & forecast user numbers, enhancing predictive analysis and strategic planning.<br>
+                • Designed and maintained interactive dashboards in Tableau for stakeholders, delivering real-time insights and facilitating data-driven decision-making.<br>
+                • Built and managed data pipelines, performing ETL processes using Google BigQuery and Google Colab Notebooks to ensure seamless data integration and processing.<br>
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Business Intelligence Engineer Intern</h4>
+              <span>Amazon, London, United Kingdom</span>
+              <span>Sept 2023 — Mar 2024</span>
+              <p class="timeline-text">
+                • Conceptualized and implemented an advanced pipeline model automating the generation of monthly, quarterly,
+                and weekly reports, managing 2000+ data points and tracking 140+ critical business metrics.<br>
+                • Significantly enhanced operational efficiency by reducing manual labour by over 40 hours per reporting cycle,
+                mitigating human error, and streamlining processes.<br>
+                • Engineered robust database pipelines to seamlessly extract data from Redshift and transfer it to local
+                environments using Python and Excel sheets, optimizing data retrieval and processing workflows.<br>
+                • Leveraged sophisticated dashboard environments including Shinny, IPT, and Amazon Quick Sight for in-depth
+                data analysis and reporting, enabling data-driven decision-making and actionable insights.<br>
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Engineer - Working Student</h4>
+              <span>Awin AG, Berlin, Germany</span>
+              <span>Mar 2022 — Aug 2023</span>
+              <p class="timeline-text">
+                • Developed and deployed an ML Publisher Recommendation model using K Means Clustering on Azure
+                platform.<br>
+                • Achieved a notable 33% month-on-month increase in advertiser-publisher invitations through the
+                Recommendations tab on the website, along with an 8.36% monthly rise in total invitations.<br>
+                • Led initiatives resulting in the highest weekly number of publisher invites sent by advertisers via the
+                recommendation tab on the website.<br>
+                • Leveraged Python, PySpark, and Pandas within Azure Databricks to analyze vast datasets and develop actionable
+                insights.<br>
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Intern - Data Science Analytics</h4>
+              <span>Delaplex Pvt Ltd, Nagpur, India</span>
+              <span>Dec 2020 — June 2021</span>
+              <p class="timeline-text">
+                • Directed the Project Development Cycle from Requirement Analysis to Deployment, ensuring stakeholder
+                alignment and project success.<br>
+                • Engineered a pioneering Product Availability Machine Learning Model, leveraging advanced techniques in
+                Python, SQL, and Azure tools, yielding significant business impact.<br>
+                • Applied cutting-edge video and image processing techniques to drive actionable insights and optimize project
+                outcomes.<br>
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">COE Analytics Intern</h4>
+              <span>Happiest Minds Technologies Pvt Ltd, Bangalore, India</span>
+              <span>July 2020 — Dec 2020</span>
+              <p class="timeline-text">
+                • Developed a Video Analysis POC using YOLO and implemented ML models for Image and Video
+                classifications, showcasing expertise in advanced analytics and Image/Video Processing.<br>
+                • Specialized in Image and Video Processing techniques including Face Detection and VoTT Tagging Tool,
+                contributing significantly to project success and demonstrating advanced analytics capabilities.<br>
+              </p>
+            </li>
+          </ol>
+        </section>
+      
+        <!-- Skills Section -->
+        <section class="skill">
+          <h3 class="h3 skills-title">My Skills</h3>
+      
+          <ul class="skills-list content-card">
+            <!-- Data Science & Machine Learning Skills -->
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning & AI</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Engineering</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python Programming</h5>
+                <data value="95">95%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Cloud Platforms (Azure, AWS, GCP)</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">ETL Pipelines & Big Data</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+      
+            <!-- Other Skills -->
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Visualization (Tableau, Power BI, QuickSight)</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">SQL & Databases (MySQL, Redshift)</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development (HTML, CSS, ReactJS)</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Version Control & Collaboration (Git, Jira)</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Android Development (Android Studio)</h5>
+                <data value="65">65%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      
+      </article>      
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="resume" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+      
+        <section class="projects">
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+          </div>
+        </section>
+      
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="easel-outline"></ion-icon>
+            </div>
+            <h3 class="h3" style="margin: 0;">Projects</h3>
+          </div>
+      
+          <ol class="timeline-list">
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Machine Learning: Publisher Recommendation Model</h4>
+              <p class="timeline-text">
+                • Implemented K-Means clustering combined with ALS model for publisher-advertiser matching based on sector clusters.<br>
+                • Used implicit ratings with ALS to augment data and enhance recommendation accuracy.<br>
+                • Addressed challenges like data sparsity, scalability, and effectiveness with the proposed method.<br>
+                • Evaluation via MAE (0.05), RMSE (0.11), and manual feedback demonstrated superior performance over existing recommendations.<br>
+                • Offers a business solution for advertisers with improved publisher recommendations, aiding decision-making, increasing sales volume, and enhancing advertiser satisfaction and royalties.
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Anomaly Detection and Trajectory Prediction</h4>
+              <p class="timeline-text">
+                • Real-time anomaly detection using YOLOv5 model on Heraeus dataset images.<br>
+                • Pre-processing techniques applied, including dynamic intensity cropping for extra width images and elimination of overexposed images.<br>
+                • YOLOv5 model trained with 97% of dataset, achieving 0.871 mAP@0.5 for 3020 images in testing.<br>
+                • Successful detection of bubbles with most having IOU > 0.9.<br>
+                • Exploration of different YOLOv5 models (l, m, n, x) for efficiency evaluation.
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Personalized Spam Filter for Social Networks</h4>
+              <p class="timeline-text">
+                • Developed an Android application utilizing Machine Learning algorithms (SVM) and Natural Language Processing to personalize user feeds, enhancing application utility.<br>
+                • Implemented a personalized feed system based on user interests, mitigating information overload and improving user experience.<br>
+                • Utilized various machine learning algorithms and natural language processing techniques to classify messages, resulting in a time-saving and user-friendly system.<br>
+                • Publication : <a href="https://bbrc.in/wp-content/uploads/2021/08/Volune-13-No-14-Special-Issue-2020-Combined.pdf" target="_blank">Biosc.Biotech.Res.Comm. Special Issue Vol 13 No 14 (2020) Pp-376-380</a>
+              </p>
+            </li>
+      
+          </ol>
+        </section>
+      
+      </article>      
+      
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24292.569341223697!2d13.401929261499074!3d52.520006632286565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851dd08b9fc67%3A0x3e61b1e758fa7d98!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sbd!4v1697403249075!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>        
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form id="contactForm" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        
+          <!-- Success Message -->
+          <p id="successMessage" style="display:none; color:green;">Your message was successfully submitted!</p>
+        </section>
+        
+        
+
+      </article>
+
     </div>
-  </section>
-<!-- ==========================
-  SECTION END
-  =========================== -->
 
-<!-- ==========================
-        Education SECTION 
-        =========================== -->
-        <section class="intro text-center section-padding color-bg">
-          <div class="container">
-        <!-- Headline -->
-        <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">My <span>Education</span></h1>
-              </div>
-            </div><br><br>
-      <!-- Entry 1 -->
-              <div class="col-md-4 wp4">
-              <h2>Master of Science in Data Science</h2>
-              <h3>Friedrich–Alexander University, Erlangen, Germany</h3>
-              <br>
-              <span class="date">2021 - Present</span>
-              <p>Specialization : AI/ML</p>
-            </div>
-    <!-- Entry 2 -->
-            <div class="col-md-4 wp4">
-            <h2>Bachelor of Engineering in Computer Science and Engineering</h2>
-            <h3>Shri Ramdeobaba College of Engineering and Management,Nagpur</h3>
-            <span class="date">2017 - 2021</span>
-            <p>CGPA : 9.81</p>
-            </div>
-    <!-- Entry 3 -->
-              <div class="col-md-4 wp4">
-              <h2>Higher Secondary Certificate, Maharashtra Board</h2>
-              <h3>Dinanath Junior College,Nagpur</h3>
-              <br>
-              <span class="date">2015 - 2017</span>
-              <p>Percentage: 80% </p><br>
-            </div>
-            <div class="col-md-4 wp4"></div>
-    <!-- Entry 4 -->
-              <div class="col-md-4 wp4">
-              <h2>Secondary School Certificate, CBSE</h2>
-              <h3>Delhi Public School, Nagpur</h3>
-              <span class="date">2015 Passout</span>
-              <p>CGPA : 9.8</p>
-            </div>
-        </div>
-  </section>
-<!-- ==========================
-   Education SECTION 
-        =========================== -->
+  </main>
 
-
-<!-- ==========================
-        SERVICE SECTION 
-        =========================== -->
-        <section class="features text-center section-padding" id="service">
-          <div class="container">
-        <!-- Headline -->
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">I do <span>Amazing Things</span> in..</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-          <div class="services">
-          <!-- Service Box 1 -->
-                  <div class="col-md-4 wp2 item">
-                    <div class="icon">
-                      <img src="img/partner-1.png" width="90" height="90" >
-                    </div>
-                    <h2>Python</h2><!-- Title -->
-                  </div>
-          <!-- Service Box 2 -->
-                  <div class="col-md-4 wp2 item delay-05s">
-                    <div class="icon">
-                      <img src="img/partner-2.png" width="90" height="90" >
-                    </div>
-                    <h2>Java</h2><!-- Title -->
-                  </div>
-          <!-- Service Box 3 -->
-                  <div class="col-md-4 wp2 item delay-05s">
-                    <div class="icon">
-                      <img src="img/partner-3.svg" width="90" height="90" >
-                    </div>
-                    <h2>Android Studio</h2><!-- Title -->
-                  </div>
-          <!-- Service Box 4 -->
-                   <div class="col-md-4 wp2 item">
-                    <div class="icon">
-                      <img src="img/partner-4.png" width="150" height="110" >
-                    </div>
-                    <h2>React Js</h2><!-- Title -->
-                  </div>
-          <!-- Service Box 5 -->
-                  <div class="col-md-4 wp2 item delay-05s">
-                    <div class="icon">
-                      <img src="img/partner-5.png" width="90" height="90" >
-                    </div>
-                    <h2>HTML</h2><!-- Title -->
-                  </div>
-          <!-- Service Box 6 -->
-                  <div class="col-md-4 wp2 item delay-05s">
-                    <div class="icon">
-                      <img src="img/partner-6.png" width="90" height="90" >
-                    </div>
-                    <h2>Canva</h2><!-- Title -->
-                  </div>
-          <!-- Service Box 7 -->
-                   <div class="col-md-4 wp2 item">
-                    <div class="icon">
-                      <img src="img/partner-7.png" width="90" height="90" >
-                    </div>
-                    <h2>Microsoft Azure</h2><!-- Title -->
-                  </div>
-          <!-- Service Box 8 -->
-                  <div class="col-md-4 wp2 item delay-05s">
-                    <div class="icon">
-                      <img src="img/partner-8.png" width="90" height="90" >
-                    </div>
-                    <h2>Amazon AWS</h2><!-- Title -->
-                  </div>
-          <!-- Service Box 9 -->
-                  <div class="col-md-4 wp2 item delay-05s">
-                    <div class="icon">
-                      <img src="img/partner-9.png" width="150" height="100" >
-                    </div>
-                    <h2>Google Cloud Platform (Firebase)</h2><!-- Title -->
-                  </div>
-          </div>
-                  <div class="clearfix"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        <section class="swag text-center" id="portfolio">
-          <div class="container">
-		    <!-- Headline -->
-            <div class="row">
-              <h1 class="arrow">
-                Recent <span>Porojects</span>
-              </h1>
-            </div>
-          </div>
-        </section>
-
-		<div class="container-fluid">
-		    <!-- About 1 -->
-			<div class="row color-bg">
-				<div class="col-md-6 nopadding features-intro-img">
-					<div class="about-image" style="background-image:url(img/project3.jpg)"></div><!-- about image 1 -->
-				</div>
-				<div class="col-md-6 about-text">
-					<h6>PERSONALIZED SPAM FILTER FOR SOCIAL NETWORKS</h6><!-- headline-->
-					<p>An Android Application that uses Machine Learning algorithm (SVM) and Natural Language Processing to personalize the feed of the user and make the application more useful for the user.</p>
-					<p>Technologies : Python, Android Studio, Google Cloud Function, Firebase.</p>
-				  <br>
-          <a href="https://drive.google.com/file/d/1qSyNdLHklBA3VPqIBfO0VyJAAQqNy3PH/view?usp=sharing" target="_blank" class="weight-outline-btn">Summary Report</a><!-- read more button  -->			
-				</div>
-			</div>
-			<!-- About 2 -->
-			<div class="row">
-				<div class="col-md-6 about-text">
-					<h6>HOMEVOLUTION (SMART HOME APPLICATION)</h6><!-- Headline -->
-					<p>In this project, Homevolution, we designed a working model for a room consisting of 4 non smart lights.</p>
-					<p>This model was controllable using an android application and also manually.</p>
-					<p>The technologies that we used were Arduino and Android. The different modules used are: Arduino Genuino Uno, LDR, ESP 8266 and finally an Android application.</p>
-				</div>
-				<div class="col-md-6 nopadding features-intro-img">
-					<div class="about-image" style="background-image:url(img/project1.jpeg)"></div><!-- about image 2 -->
-				</div>
-			</div>
-			<!-- About 3 -->
-			<div class="row color-bg">
-				<div class="col-md-6 nopadding features-intro-img">
-					<div class="about-image" style="background-image:url(img/project2.png)"></div><!-- about image 3 -->
-				</div>
-				<div class="col-md-6 about-text">
-					<h6>PASS-SEC</h6><!-- Headline-->
-					<p>Pass-Sec brings you a new Simple, Secure and Efficient way to manage your Lockdown Pass. You keep your phone and leave the rest on us.</p>
-					<p>The idea of Pass-Sec is to provide a easy way to move around in the city.The thought process of our Project is to Digitalize the Pass that is Requested by the Local Citizens and is Issued by the Government. The complete Project is divided into two Parts that is Web Application and Mobile Application.</p>
-					<a href="https://teamfm31.github.io/" target="_blank" class="weight-outline-btn">Website Link</a><!-- read more button  -->					
-          <a href="https://github.com/mohammedhusain52/Pass-Sec-Website/" target="_blank" class="weight-outline-btn">Website Code</a><!-- read more button  -->					
-          <a href="https://github.com/mohammedhusain52/Pass-Sec-App/"  target="_blank" class="weight-outline-btn">Android App Code</a><!-- read more button  -->			
-        </div>
-			</div>
-		</div>
-		<!-- ==========================
-        ABOUT SECTION END
-        =========================== -->	
-
-  		<!-- ==========================
-        Publication SECTION
-    =========================== -->
-        <section class="text-center section-padding" >
-          <div class="container">
-          <!-- Headline -->
-          <div class="row">
-                <div class="col-md-12">
-                  <h1 class="arrow">My <span>Publications and Certifications</span></h1>
-                </div>
-              </div><br><br>
-              <div class="text pl-3">
-								<h2>Personalised Spam Filter for Social Networks Using Machine Learning Algorithms</h2>
-								<a href='https://bbrc.in/wp-content/uploads/2021/08/Volune-13-No-14-Special-Issue-2020-Combined.pdf' target="_blank"><span class="position">Publication Journal : Society For Science and Nature (Dec 23, 2020)</span></a>
-							</div>
-              <div class="text pl-3">
-							  <h2>Blockchain Basics</h2>
-							  <span class="position">Coursera</span>
-						  </div>
-                <div class="text pl-3">
-                <h2>AWS Fundamentals</h2>
-                <span class="position">Coursera </span>
-                <p>Specialization (4 Courses)</p>
-                </div>
-                <div class="text pl-3">
-                  <h2>Google Cloud Platform</h2>
-                  <span class="position">Coursera</span>
-                  <p>Specialization (2 Courses)</p>
-                  </div>
-                  <div class="text pl-3">
-                    <h2>Python For Everybody</h2>
-                    <span class="position">Coursera</span>
-                    <p>Specialization (3 Courses)</p>
-                  </div>
-              </div>
-          </div>
-    </section>		
-				<!-- ==========================
-          SECTION END
-        =========================== -->
-		
-<!-- ==========================
-        Achievement SECTION
-    =========================== -->
-    <section class="intro text-center section-padding color-bg" >
-      <div class="container">
-      <!-- Headline -->
-      <div class="row">
-            <div class="col-md-12">
-              <h1 class="arrow">My <span>Achievements</span></h1>
-            </div>
-          </div><br><br>
-          <div class="text pl-3">
-            <h2>Internal Smart India Hackathon 2020 Winner.</h2>
-          </div>
-          <div class="text pl-3">
-            <h2>Vice-President at Computer
-            Science and Engineering
-            Department at RCOEM 2020-21.</h2>
-          </div>
-          <div class="text pl-3">
-            <h2>Joint Treasurer at Computer
-            Science and Engineering
-            Department at RCOEM 2019-20.</h2>
-          </div>
-          <div class="text pl-3">
-            <h2>Campus Ambassador , Coding
-            Ninja India.</h2>
-          </div>
-          <div class="text pl-3">
-            <h2>Campus Ambassador , TAM Enterprises.</h2>
-          </div>
-          <div class="text pl-3">
-            <h2>Campus Ambassador , AXIS VNIT 2020.</h2>
-          </div>
-          <div class="text pl-3">
-            <h2>Magazine Designer , CSE ,
-            RCOEM.</h2>
-          </div>
-          <div class="text pl-3">
-            <h2>Team Leader , AIESEC India
-            (September 2019 - January
-            2020 ).</h2>
-          </div>
-          </div>
-      </div>
-</section>		
-    <!-- ==========================
-      SECTION END
-    =========================== -->
-
-
-		<!-- ==========================
-        CONTACT SECTION
-        =========================== -->
-        <section class="text-center section-padding contact-wrap" id="contact">
-		  <!-- To Top Button -->
-          <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
-          <div class="container">
-		    <!-- Headline -->
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">Drop <span>me</span> a line</h1>
-              </div>
-            </div>
-            <div class="row contact-details">
-			  <!-- Linked In Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-linkedin"></i><span>LinkedIn</span></h2>
-                  <p><a href="https://www.linkedin.com/in/mohammed-husain-7655a317b/" target="_blank" rel="noopener noreferrer">Mohammed Husain</a></p>
-                </div>
-              </div>
-			  <!-- Phone Number Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-                  <p><a href="tel://7620746566" target="_blank" rel="noopener noreferrer">+91-7620746566</a></p>
-	            </div>
-              </div>
-			  <!-- E-Mail Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-                  <p><a href="mailto:mohammedhusain51@gmail.com" target="_blank" rel="noopener noreferrer">mohammedhusain51@
-                    gmail.com</a></p>
-                  </div>
-              </div>
-            </div>
-            <div class="row contact-details">
-          <!-- Github Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-github"></i><span>Github</span></h2>
-                  <p><a href="https://github.com/mohammedhusain52" target="_blank" rel="noopener noreferrer">mohammedhusain52</a></p>
-                </div>
-              </div>
-			  <!-- Facebook Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-facebook"></i><span>Facebook</span></h2>
-                  <p><a href="https://www.facebook.com/mohammed.husain.39/" target="_blank" rel="noopener noreferrer">Mohammed Husain</a></p>
-	            </div>
-              </div>
-			  <!-- Instagram Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-instagram"></i><span>Instagram</span></h2>
-                  <p><a href="https://www.instagram.com/mohammedhusain52/" target="_blank" rel="noopener noreferrer">mohammedhusain52</a></p>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </section>
-		<!-- ==========================
-        CONTACT SECTION END
-        =========================== -->
-		
-		
-		
-		<!-- ==========================
-        FOOTER SECTION
-        =========================== -->
-        <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <p>All Rights Reserved. <a>Mohammed Husain</a>
-              </div>
-            </div>
-          </div>
-        </footer>
-		<!-- ==========================
-        FOOTER SECTION END
-        =========================== -->		
-		
-		
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- SmoothScroll -->           
-    <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
-    <!-- Bootstrap -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/waypoints.min.js"></script>
-    <!-- classie.js -->
-	<script src="js/classie.js"></script>
-    <!-- FlexSlider -->
-    <script src="assets/flexslider/jquery.flexslider.js"></script>
-	<!-- Modernizr -->
-    <script src="js/modernizr.js"></script>
-	<!-- Text Rotator -->
-	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
-	<!-- Lightbox.js -->
-    <script src="assets/lightbox/js/lightbox.min.js"></script>
-    <!-- Google Maps --> 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"></script>
-	<!-- Theme JavaScript Core -->
-	<script src="js/main.js"></script>
-	<script src="js/script.js"></script>
-
-	
-	<!-- TEXT ROTATOR SETTINGS -->
-    <script type="text/javascript">
-    $(".rotate").textrotator({
-      animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-      speed: 2000 // How many milliseconds until the next word show.
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', async function (e) {
+      e.preventDefault(); // Prevent the default form submission
+  
+      const form = e.target;
+      const formData = new FormData(form);
+  
+      try {
+        // Send the form data to Formspree via POST
+        const response = await fetch('https://formspree.io/f/xjkvvkda', {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+  
+        // Check if the submission was successful
+        if (response.ok) {
+          // Show the success message
+          document.getElementById('successMessage').style.display = 'block';
+          form.reset(); // Reset the form
+        } else {
+          alert('There was a problem submitting your form. Please try again.');
+        }
+      } catch (error) {
+        alert('There was an error. Please try again later.');
+      }
     });
-    </script>
-	
-    </body>
+  </script>
+  
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
